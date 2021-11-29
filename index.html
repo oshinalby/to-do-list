@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<style>
+  
+    button{
+            size: 20px;
+            font-weight: bold;
+            color: rgb(22, 33, 180);
+            border-color: rgb(17, 12, 87);
+            font-size: medium;
+        }
+        .login{
+            width: 350px;
+            height: auto;
+            background-color:rgb(233, 227, 238);
+            text-align: left;
+        }
+        .container{
+            background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-image:url(./20150414005547-cloud-time-management-tech.jpeg);
+    display: flex;
+     justify-content: space-around;  
+    align-items: center;
+        }
+        
+        .login h2{
+    color: rgb(197, 177, 177);
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 12px 30px;
+    background-color: rgb(29, 84, 148);
+}#name{
+    width: 300px;
+}
+.login input{
+    width: 300px;
+    height: 30px;
+    margin-left: 12px;
+    margin-top: 12px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-bottom: 3px solid rgb(32, 188, 199);
+
+}b{
+    font-size: 18px;
+    color: #000;
+    padding-left: 15px;
+}
+#submit{
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 40px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    margin-left: 12px;
+    margin: auto;
+    padding-left: 8px 30;
+    background-color: rgb(37, 162, 204);
+    border-radius: 15px;
+    cursor: pointer;
+}
+ #submit:hover{
+     letter-spacing: 4px;
+ }
+ h4{
+     padding-left: 30px;
+ }
+</style>
+</head>
+<body>
+ 
+    <section class="s1">
+        <div class="col-md-12" >
+            <div class="row">
+               
+                <div class="container">
+                    <div class="login">
+                        <h2>Login</h2>
+                        <form action="main.html" id="frmLogin" onsubmit="return validate(this)"><br>
+
+                            <label for="uname"><b> USERNAME</b></label><br>
+                            <input type="text" id="uname" placeholder="Enter Username"><br><br>
+                            <label for="pwd"><b> PASSWORD</b></span> </label><br>
+                            
+                            <input type="password" id="pwd"  placeholder="Enter Password"><br>
+                            
+                            
+                            <br><br>
+                            <button id="submit">LOGIN</button><br>
+
+
+
+                        </form> 
+                             
+                    </div>
+                    
+                </div>
+            </div>
+        
+
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
